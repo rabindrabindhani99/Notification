@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrowdAlertActivity"
+    tools:ignore="hardCodedText">
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="Crowd Alert"
+        android:textColor="@color/red"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading1"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:padding="@dimen/_8sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:scrollbars="vertical"
+            android:text="@string/crowd_alert"
+            android:textSize="@dimen/_18sdp" />
+    </ScrollView>
+</RelativeLayout>
